@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 import gsap from "gsap";
 
-export default function Magnetic({
+export default function MagneticComponent({
 	children,
 }: {
 	children: React.ReactElement;
@@ -52,6 +52,7 @@ export default function Magnetic({
 		return () => {
 			magnetic.current.removeEventListener("mousemove", mouseMove);
 
+			// eslint-disable-next-line react-hooks/exhaustive-deps
 			magnetic.current.removeEventListener("mouseleave", mouseLeave);
 		};
 	}, []);

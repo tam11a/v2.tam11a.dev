@@ -4,6 +4,7 @@ import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import MagneticComponent from "./magnetic";
 
 export default function Header() {
 	const isTouchDevice = "ontouchstart" in window;
@@ -45,21 +46,23 @@ export default function Header() {
 					className="h-12 opacity-0"
 				/>
 			</Link>
-			<p
-				id="me-nu"
-				className="text-xl p-5"
-				onMouseEnter={(e) => {
-					setCursorPosition((ocp) => ({
-						x: e.pageX - ocp.x,
-						y: e.pageY - ocp.y,
-					}));
-				}}
-				onMouseLeave={() => {
-					setCursorPosition({ x: 0, y: 0 });
-				}}
-			>
-				ME-NU
-			</p>
+			<MagneticComponent>
+				<p
+					id="me-nu"
+					className="text-xl p-5"
+					// onMouseEnter={(e) => {
+					// 	setCursorPosition((ocp) => ({
+					// 		x: e.pageX - ocp.x,
+					// 		y: e.pageY - ocp.y,
+					// 	}));
+					// }}
+					// onMouseLeave={() => {
+					// 	setCursorPosition({ x: 0, y: 0 });
+					// }}
+				>
+					ME-NU
+				</p>
+			</MagneticComponent>
 		</header>
 	);
 }
