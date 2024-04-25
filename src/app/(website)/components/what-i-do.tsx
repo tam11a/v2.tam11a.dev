@@ -1,5 +1,6 @@
-import { cn } from "@/lib/utils";
 import StringLine from "./string-line";
+import FadeOnScroll from "../fade-on-scroll";
+import { motion } from "framer-motion";
 
 export default function WhatIDo() {
 	const whatIDo = ["Front-end", "BACK-END", "User Interface", "Mobile App"];
@@ -8,9 +9,11 @@ export default function WhatIDo() {
 			id="what-i-do"
 			className="flex flex-col justify-center min-h-svh"
 		>
-			<h3 className="w-full text-2xl tracking-[0.6rem] max-w-4xl px-10 mx-auto mb-7">
-				What I Do
-			</h3>
+			<FadeOnScroll>
+				<motion.h3 className="w-full text-2xl tracking-[0.6rem] max-w-4xl px-10 mx-auto mb-7">
+					What I Do
+				</motion.h3>
+			</FadeOnScroll>
 			<StringLine />
 			{whatIDo.map((skill, index) => (
 				<div
