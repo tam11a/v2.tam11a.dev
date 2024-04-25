@@ -78,4 +78,8 @@
 	.text-gradient {
 		@apply bg-gradient-logo bg-clip-text text-transparent;
 	}
+
+	.child-gradient {
+		@apply [&>span]:text-gradient;
+	}
 }
