@@ -47,6 +47,6 @@ export default function Cursor() {
 	}, []);
 
 	return (
-		<div className="cursor fixed top-0 left-0 mix-blend-difference bg-slate-300 -translate-x-1/2 -translate-y-1/2 transform opacity-0 pointer-events-none select-none rounded-full z-[10000]" />
+		<div className="cursor fixed top-0 left-0 mix-blend-difference bg-slate-300 -translate-x-1/2 -translate-y-1/2 transform h-40 w-40 opacity-0 pointer-events-none select-none rounded-full z-[10000]" />
 	);
 }
