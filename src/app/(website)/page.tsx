@@ -8,6 +8,7 @@ import WhatIDo from "./components/what-i-do";
 
 import { useRef, useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+import LinesSVG from "./lines-svg";
 
 export default function Home() {
 	const lenisRef = useRef<Lenis | undefined>(undefined);
@@ -38,13 +39,16 @@ export default function Home() {
 	}, []);
 
 	return (
-		<main>
-			<Hero />
-			<AboutMe />
-			<WhatIDo />
-			<Experience />
-			<History />
-			<Clients />
-		</main>
+		<>
+			<main className="z-10">
+				<Hero />
+				<AboutMe />
+				<WhatIDo />
+				<Experience />
+				<History />
+				<Clients />
+			</main>
+			<LinesSVG />
+		</>
 	);
 }
