@@ -102,6 +102,6 @@
 	}
 
 	.child-gradient {
-		@apply [&>span]:text-gradient;
+		@apply [&>span]:text-cyan-400;
 	}
 }
