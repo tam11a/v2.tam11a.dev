@@ -8,24 +8,16 @@ export default function Cursor() {
 		const isTouchDevice = "ontouchstart" in window;
 		const createCursorFollower = () => {
 			document.addEventListener("mousemove", (e) => {
-				const {
-					clientX: x,
-					clientY: y,
-					// target
-				} = e;
-
-				// Check if target is inside a link or button
-				// const isTargetLinkOrBtn =
-				// 	target?.closest("a") || target?.closest("button");
+				const { clientX: x, clientY: y } = e;
 
 				gsap.set(".cursor", {
 					x: x + 3,
 					y: y + 3,
-					height: 160,
-					width: 160,
+					height: 80,
+					width: 80,
 					duration: 0.7,
 					opacity: 1,
-					ease: "sine.inOut",
+					ease: "sine.out(1, 0.3)",
 				});
 			});
 		};
@@ -37,7 +29,7 @@ export default function Cursor() {
 				duration: 0.7,
 				height: 0,
 				width: 0,
-				ease: "sine.inOut",
+				ease: "sine.out(1, 0.3)",
 			});
 		});
 
@@ -48,6 +40,6 @@ export default function Cursor() {
 	}, []);
 
 	return (
-		<div className="cursor fixed top-0 left-0 mix-blend-difference bg-slate-300 -translate-x-1/2 -translate-y-1/2 transform h-40 w-40 opacity-0 pointer-events-none select-none rounded-full z-[10000]" />
+		<div className="cursor fixed top-0 left-0 mix-blend-difference bg-slate-300 -translate-x-1/2 -translate-y-1/2 transform h-20 w-20 opacity-0 pointer-events-none select-none rounded-full z-[10000]" />
 	);
 }
