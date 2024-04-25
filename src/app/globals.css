@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -72,5 +74,8 @@
 	}
 	body {
 		@apply bg-background text-foreground;
+	}
+	.text-gradient {
+		@apply bg-gradient-logo bg-clip-text text-transparent;
 	}
 }
