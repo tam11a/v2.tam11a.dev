@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import MagneticComponent from "./magnetic";
 import { useState } from "react";
-// import { AnimatePresence } from "framer-motion";
-// import Nav from "./nav";
+import { AnimatePresence } from "framer-motion";
+import Nav from "./nav";
 
 export default function Header() {
 	const [menu, setMenu] = useState(false);
@@ -22,13 +22,13 @@ export default function Header() {
 			<MagneticComponent>
 				<p
 					id="me-nu"
-					className="text-xl p-5 zoom-button"
-					onClick={() => setMenu((m) => !m)}
+					className="text-xl p-5 zoom-button z-[1000]"
+					// onClick={() => setMenu((m) => !m)}
 				>
 					{menu ? "CLOSE" : "ME-NU"}
 				</p>
 			</MagneticComponent>
-			{/* <AnimatePresence mode="wait">{menu && <Nav />}</AnimatePresence> */}
+			<AnimatePresence mode="wait">{menu && <Nav />}</AnimatePresence>
 		</header>
 	);
 }
