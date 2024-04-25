@@ -37,6 +37,7 @@ export default function Cursor() {
 				duration: 0.7,
 				height: 0,
 				width: 0,
+				ease: "sine.inOut",
 			});
 		});
 
