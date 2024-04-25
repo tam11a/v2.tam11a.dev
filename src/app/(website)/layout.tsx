@@ -4,6 +4,7 @@ import "../globals.css";
 import { cn } from "@/lib/utils";
 import Header from "./header";
 import Footer from "./footer";
+import Cursor from "./cursor";
 
 const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
@@ -20,10 +21,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={cn(bebas.className)}>
+			<body className={cn(bebas.className, "cursor-none")}>
 				<Header />
 				{children}
 				<Footer />
+				<Cursor />
 			</body>
 		</html>
 	);

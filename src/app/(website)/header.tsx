@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +14,14 @@ export default function Header() {
 					className="h-12 opacity-0"
 				/>
 			</Link>
-			<p className="text-xl">ME-NU</p>
+			<p
+				className="text-xl"
+				onMouseEnter={() => {
+					console.log("ME-NU");
+				}}
+			>
+				ME-NU
+			</p>
 		</header>
 	);
 }
