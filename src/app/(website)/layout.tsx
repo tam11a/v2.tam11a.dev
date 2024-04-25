@@ -3,6 +3,7 @@ import { Bebas_Neue } from "next/font/google";
 import "../globals.css";
 import { cn } from "@/lib/utils";
 import Header from "./header";
+import Footer from "./footer";
 
 const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 			<body className={cn(bebas.className)}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
