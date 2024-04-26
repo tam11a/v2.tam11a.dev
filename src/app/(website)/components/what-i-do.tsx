@@ -18,9 +18,9 @@ export default function WhatIDo() {
 			{whatIDo.map((skill, index) => (
 				<div
 					key={index}
-					className="pt-5"
+					className="pt-3 sm:pt-5"
 				>
-					<p className="text-6xl leading-[80%] w-full max-w-4xl px-10 mb-7 mx-auto">
+					<p className="text-4xl sm:text-6xl leading-[80%] w-full max-w-4xl px-10 mb-5 sm:mb-7 mx-auto">
 						{skill}
 					</p>
 					<StringLine />

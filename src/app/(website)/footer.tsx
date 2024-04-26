@@ -49,7 +49,7 @@ export default function Footer() {
 				</div>
 				<div className="hidden md:inline md:col-span-2" />
 				<div className="col-span-6 md:col-span-2 flex flex-col text-3xl gap-4 md:items-end">
-					<div className="flex flex-col gap-3">
+					<div className="flex flex-col gap-3 mt-9 md:mt-0">
 						<Link
 							target="_blank"
 							href="mailto:ibrahimsadiktamim@gmail.com"

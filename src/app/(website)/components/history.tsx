@@ -34,17 +34,17 @@ export default function History() {
 				<div
 					key={index}
 					className={cn(
-						"pt-5"
+						"pt-1 md:pt-5"
 						// "hover:bg-gradient-logo hover:text-background "
 					)}
 				>
-					<div className="grid grid-cols-7 md:gap-8 text-5xl max-w-4xl mx-auto px-10 mb-5">
-						<p className="col-span-7 md:col-span-3 text-3xl md:text-4xl">
+					<div className="grid grid-cols-7 md:gap-8 text-3xl sm:text-4xl max-w-4xl mx-auto px-10 mb-5">
+						<p className="col-span-7 md:col-span-3 mb-2 md:mb-0 text-2xl text-slate-500 sm:text-4xl">
 							{job.date}
 						</p>
 						<p className="col-span-7 md:col-span-4 md:leading-8">
 							{job.title} <br />
-							<span className="text-gradient text-2xl font-semibold tracking-widest">
+							<span className="text-gradient text-xl sm:text-2xl font-semibold tracking-widest">
 								{job.company}
 							</span>
 						</p>

@@ -13,7 +13,7 @@ export default function AboutMe() {
 			<FadeOnScroll>
 				<motion.div className="space-y-4">
 					<h3 className="text-2xl tracking-[0.6rem] box">About Me</h3>
-					<p className="text-6xl child-gradient box">
+					<p className="text-4xl sm:text-6xl child-gradient box">
 						I&apos;m a software engineer with strong focus on{" "}
 						<span>software interface</span> & <span>digital experience</span>.
 					</p>

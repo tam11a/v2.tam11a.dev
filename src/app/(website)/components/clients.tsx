@@ -14,7 +14,7 @@ export default function Clients() {
 				<FadeOnScroll>
 					<motion.div className="space-y-4">
 						<h3 className="text-2xl tracking-[0.6rem]">Clients</h3>
-						<p className="text-6xl child-gradient">
+						<p className="text-4xl sm:text-6xl child-gradient">
 							I worked with some <span>innovative</span> agencies and also with
 							some <span>amazing</span> clients independently to build their{" "}
 							<span>top-notch products</span>.
@@ -26,7 +26,7 @@ export default function Clients() {
 				<StringLine />
 				{clients.map((client, index) => (
 					<div key={index}>
-						<p className="text-6xl leading-[80%] w-full max-w-4xl px-10 mb-4 mx-auto">
+						<p className="text-4xl sm:text-6xl leading-[80%] w-full max-w-4xl px-10 mb-4 mx-auto">
 							{client}
 						</p>
 						{/* <hr className="border-slate-700" /> */}
