@@ -24,7 +24,7 @@ export default function RootLayout({
 			<body
 				className={cn(
 					bebas.className,
-					"cursor-none overflow-x-hidden overflow-y-auto relative"
+					"cursor-none overflow-x-hidden overflow-y-hidden relative"
 				)}
 			>
 				<Header />

@@ -18,7 +18,7 @@ export default function Curve() {
 		enter: {
 			d: targetPath,
 
-			transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
+			transition: { duration: 2.4, ease: [0.76, 0, 0.24, 1] },
 		},
 
 		exit: {
@@ -30,7 +30,7 @@ export default function Curve() {
 
 	return (
 		<svg
-			className={`absolute top-0 -left-[99px] w-[100px] h-full fill-slate-900 stroke-none`}
+			className={`absolute top-0 -left-[99px] w-[100px] h-full fill-foreground stroke-none transition-all duration-700`}
 		>
 			<motion.path
 				variants={curve}
