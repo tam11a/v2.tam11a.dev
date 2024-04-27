@@ -34,6 +34,9 @@ export const metadata: Metadata = {
 		siteName: "Ibrahim Sadik Tamim - Portfolio",
 		url: "https://tam11a.dev",
 	},
+	verification: {
+		google: "Z83sG39BadmJ0uyci-ndT3TCQ_sR_edLbjH43hNgRHs",
+	},
 };
 
 const jsonLd: WithContext<Person> = {
