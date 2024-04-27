@@ -6,6 +6,7 @@ import Header from "./header";
 import Footer from "./footer";
 import Cursor from "./cursor";
 import { Person, WithContext } from "schema-dts";
+import Script from "next/script";
 
 const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
@@ -86,7 +87,8 @@ export default function RootLayout({
 				<Footer />
 				<Cursor />
 				{/* Add JSON-LD to your page */}
-				<script
+				<Script
+					id="json-ld"
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 				/>
