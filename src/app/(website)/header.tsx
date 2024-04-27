@@ -2,13 +2,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import MagneticComponent from "./magnetic";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./nav";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
 	const [menu, setMenu] = useState(false);
+
+	useEffect(() => {
+		if (menu) {
+			document.body.classList.remove("overflow-y-auto");
+			document.body.classList.add("overflow-y-hidden");
+		} else {
+			document.body.classList.remove("overflow-y-hidden");
+			document.body.classList.add("overflow-y-auto");
+		}
+	}, [menu]);
 
 	return (
 		<header className="flex flex-row items-center justify-between max-w-7xl mx-auto px-10 py-9 relative z-10 min-h-14">
